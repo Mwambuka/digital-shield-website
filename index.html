@@ -205,8 +205,8 @@ nav.primary a:hover{color:var(--ink); border-color:var(--highlight);}
 .trust-item:last-child{border-right:none;}
 .trust-item .icon-badge{width:2.6rem; height:2.6rem; border-radius:50%; background:var(--brand); color:#fff; display:flex; align-items:center; justify-content:center; flex-shrink:0;}
 .trust-item .icon-badge .icon{width:19px; height:19px;}
-.trust-item .t-num{font-weight:800; font-size:1.05rem; line-height:1.2; color:var(--ink);}
-.trust-item .t-cap{font-size:0.78rem; color:var(--ink-soft); line-height:1.3;}
+.trust-item .t-num{font-weight:800; font-size:1.05rem; line-height:1.2; color:var(--ink); display:block;}
+.trust-item .t-cap{font-size:0.78rem; color:var(--ink-soft); line-height:1.3; display:block;}
 @media (max-width:900px){.trust-strip{grid-template-columns:1fr 1fr;} .trust-item:nth-child(2){border-right:none;}}
 @media (max-width:560px){.trust-strip{grid-template-columns:1fr;} .trust-item{border-right:none; border-bottom:1px solid var(--line);} .trust-item:last-child{border-bottom:none;}}
 
@@ -309,7 +309,7 @@ nav.primary a:hover{color:var(--ink); border-color:var(--highlight);}
 
 /* ============ GOVERNANCE ============ */
 .gov-banner{position:relative; border-radius:var(--radius); overflow:hidden; margin-bottom:clamp(2.5rem,5vw,3.5rem); box-shadow:var(--shadow);}
-.gov-banner img{width:100%; max-height:380px; object-fit:cover; object-position:center 25%;}
+.gov-banner img{width:100%; max-height:380px; object-fit:cover; object-position:center 68%;}
 .gov-banner-cap{position:absolute; left:0; right:0; bottom:0; background:linear-gradient(0deg, rgba(8,21,33,0.88), rgba(8,21,33,0)); color:#fff; padding:2rem 1.8rem 1.2rem; font-size:0.92rem;}
 .gov-tiers{display:grid; grid-template-columns:repeat(4,1fr); gap:var(--gap);}
 .tier{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:1.5rem; border-top:3px solid var(--brand);}
@@ -370,8 +370,8 @@ nav.primary a:hover{color:var(--ink); border-color:var(--highlight);}
 .contact-card:hover{background:rgba(255,255,255,0.12);}
 .contact-card .icon-badge{width:2.6rem; height:2.6rem; border-radius:50%; background:var(--highlight); color:#241A06; display:flex; align-items:center; justify-content:center; flex-shrink:0;}
 .contact-card .icon-badge .icon{width:18px; height:18px;}
-.contact-card .cc-label{font-size:0.74rem; text-transform:uppercase; letter-spacing:0.06em; color:#9FB0BE;}
-.contact-card .cc-val{font-weight:700; font-size:1rem;}
+.contact-card .cc-label{font-size:0.74rem; text-transform:uppercase; letter-spacing:0.06em; color:#9FB0BE; display:block;}
+.contact-card .cc-val{font-weight:700; font-size:1rem; display:block;}
 @media (max-width:820px){.contact-band{grid-template-columns:1fr;}}
 
 /* ============ FOOTER ============ */
@@ -651,11 +651,14 @@ footer{background:var(--brand-deep); color:#C9D5DF; padding:clamp(3rem,6vw,4rem)
         <p class="lede">No stock photography. Every image here is from an actual Digital Shield or Tech Umuganda session.</p>
       </div>
       <div class="gallery reveal">
+        <figure><img src="images/africa-tech-leaders-cohort.jpg" width="1400" height="933" loading="lazy" alt="A large cohort of students and facilitators posing together in front of an 'Africa's Future Tech Leaders' banner."><figcaption>A full training cohort at the close of an Africa's Future Tech Leaders session.</figcaption></figure>
         <figure><img src="images/team-group.jpg" width="1400" height="933" loading="lazy" alt="Volunteer facilitators and partners gathered on the steps of a building after a Digital Shield training session in Kigali."><figcaption>Volunteer facilitators and partners after a Digital Shield training session, Kigali.</figcaption></figure>
         <figure><img src="images/facilitator-mentoring.jpg" width="1400" height="933" loading="lazy" alt="A volunteer facilitator points at a laptop screen while guiding two students."><figcaption>A volunteer facilitator walks students through a hands-on digital-safety exercise.</figcaption></figure>
         <figure><img src="images/student-chalkboard.jpg" width="1400" height="933" loading="lazy" alt="A student writes on a chalkboard during a classroom session."><figcaption>A student takes the lead during a Digital Shield classroom session.</figcaption></figure>
+        <figure><img src="images/laptop-training-session.jpg" width="1400" height="933" loading="lazy" alt="Adult learners seated at wooden desks with laptops in a classroom, guided by a facilitator at the chalkboard."><figcaption>A Tech Umuganda digital-skills session for adult learners and teachers.</figcaption></figure>
         <figure><img src="images/hero-classroom.jpg" width="1400" height="933" loading="lazy" alt="A wide view of a classroom full of students at computers during a session."><figcaption>A full classroom during a Digital Shield / Tech Umuganda session.</figcaption></figure>
         <figure><img src="images/computer-lab.jpg" width="1400" height="933" loading="lazy" alt="Students seated at desktop computers in a school computer lab."><figcaption>Students at a school computer lab supported through Tech Umuganda.</figcaption></figure>
+        <figure><img src="images/cmu-africa-cohort.jpg" width="1400" height="933" loading="lazy" alt="Facilitators wearing Carnegie Mellon University Africa t-shirts smiling and giving a thumbs-up in an auditorium."><figcaption>Facilitators from our Carnegie Mellon University Africa volunteer pipeline.</figcaption></figure>
       </div>
     </div>
   </section>
@@ -711,22 +714,22 @@ footer{background:var(--brand-deep); color:#C9D5DF; padding:clamp(3rem,6vw,4rem)
       </div>
 
       <figure class="gov-banner reveal">
-        <img src="images/team-group.jpg" width="1400" height="933" loading="lazy" alt="Volunteer facilitators and partners gathered after a Digital Shield training session in Kigali.">
-        <figcaption class="gov-banner-cap">Digital Shield's volunteer facilitators and partners, Kigali.</figcaption>
+        <img src="images/africa-tech-leaders-cohort.jpg" width="1400" height="933" loading="lazy" alt="A large cohort of Rwandan secondary school students and Digital Shield facilitators posing together in front of an 'Africa's Future Tech Leaders' banner after a training day.">
+        <figcaption class="gov-banner-cap">One cohort, one training day — Digital Shield facilitators with the students of Africa's Future Tech Leaders.</figcaption>
       </figure>
 
       <div class="gov-tiers reveal">
         <div class="tier">
           <h4>General Assembly<br>Founding Members</h4>
           <div class="person"><span class="mono">BM</span><div class="who"><strong>Bertin Mwambuka</strong><span>Chairperson</span></div></div>
-          <div class="person"><span class="mono">BM</span><div class="who"><strong>Blaise Pascal Mwambuka</strong><span>Founding Member</span></div></div>
-          <div class="person"><span class="mono">BM</span><div class="who"><strong>Belard Mwambuka</strong><span>Founding Member</span></div></div>
-          <div class="person"><span class="mono">BM</span><div class="who"><strong>Blando Mwambuka</strong><span>Founding Member</span></div></div>
+          <div class="person"><span class="mono">BK</span><div class="who"><strong>Blaise Pascal Kwizera</strong><span>Founding Member</span></div></div>
+          <div class="person"><span class="mono">BR</span><div class="who"><strong>Belard Rwigema</strong><span>Founding Member</span></div></div>
+          <div class="person"><span class="mono">BK</span><div class="who"><strong>Blando Kabagamba</strong><span>Founding Member</span></div></div>
         </div>
         <div class="tier">
           <h4>Executive Committee<br>Day-to-Day Management</h4>
           <div class="person"><span class="mono">BM</span><div class="who"><strong>Bertin Mwambuka</strong><span>Chairperson &amp; Legal Representative</span></div></div>
-          <div class="person"><span class="mono">JK</span><div class="who"><strong>Joseph Karangwa</strong><span>Vice Chairperson &amp; Deputy Legal Rep.</span></div></div>
+          <div class="person"><span class="mono">GN</span><div class="who"><strong>Guilaine Ndahiro</strong><span>Vice Chairperson &amp; Deputy Legal Rep.</span></div></div>
           <div class="person"><span class="mono">MY</span><div class="who"><strong>Meddy Yahaya</strong><span>Secretary General</span></div></div>
         </div>
         <div class="tier">
